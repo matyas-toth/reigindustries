@@ -1,103 +1,54 @@
 import Image from "next/image";
+import CTAButton from "@/components/cta-button";
+import AnimatedLogoCloud from "@/components/logo-cloud";
+import Navbar from "@/components/navbar";
+
+import ccWebsite from "@/../public/websites/cloudclient_ws.png";
+import mmWebsite from "@/../public/websites/minemass_ws.png";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="container min-h-screen mx-auto flex flex-col justify-start items-center">
+      <Navbar />
+      <section className="flex flex-col  gap-10 mt-40">
+        <div className="flex flex-col justify-center items-center gap-2">
+          <div className="bg-white w-fit tracking-pill font-bold flex justify-center items-center px-4 py-1 rounded-full shadow-slighter"><div className="w-4 h-4 rounded-full [background:radial-gradient(35%_63%_at_50%_50%,rgb(99,102,241)_0%,rgb(67,56,202)_100%)] inline-block mr-2 animate-pulse duration-1000"></div><span className="text-[18px] text-fancy">Projekteket Várunk Májusra</span></div>
+          <h1 className="text-7xl font-bold tracking-[-0.04em] text-fancy max-w-2xl text-center [line-height:1.1em]">
+            Design, Ami Sikerre Viszi az Ötleteidet
+          </h1>
+          <h2 className="mt-4 mb-6 text-[18px] [line-height:27px] font-semibold tracking-text text-gray max-w-xs text-center">
+            Világszintű design, ami meggyőz és forgalmat növel, amikor számít.
+          </h2>
+          <CTAButton />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <AnimatedLogoCloud />
+        <div className="flex flex-row justify-center items-center -mt-10">
+          <div className="w-[25%] flex flex-col justify-center items-center gap-4">
+            <div className="top-0 left-0 w-full min-h-54 relative">
+              <Image src={ccWebsite} alt="CloudClient" className="absolute bottom-0 left-10 w-48 aspect-video object-cover z-10 rotate-[7deg] rounded-2xl border-4 border-white shadow-slight" />
+              <Image src={mmWebsite} alt="MineMass" className="absolute bottom-0 right-10 w-48 aspect-video object-cover rotate-[-7deg] rounded-2xl border-4 border-white -translate-y-10 shadow-slight" />
+            </div>
+            <h3 className="text-5xl text-fancy font-bold tracking-subtitle pr-1 mt-4">Weboldalak</h3>
+          </div>
+          <div className="w-[25%] flex flex-col justify-center items-center gap-4">
+            <div className="top-0 left-0 w-full min-h-54 relative">
+              <Image src={ccWebsite} alt="CloudClient" className="absolute bottom-0 left-10 w-48 aspect-video object-cover z-10 rotate-[7deg] rounded-2xl border-4 border-white shadow-slight" />
+              <Image src={mmWebsite} alt="MineMass" className="absolute bottom-0 right-10 w-48 aspect-video object-cover rotate-[-7deg] rounded-2xl border-4 border-white -translate-y-10 shadow-slight" />
+            </div>
+            <h3 className="text-5xl text-fancy font-bold tracking-subtitle pr-1 mt-4">Digitális Termékek</h3>
+          </div>
+          <div className="w-[25%] flex flex-col justify-center items-center gap-4">
+            <div className="top-0 left-0 w-full min-h-54 relative">
+              <Image src={ccWebsite} alt="CloudClient" className="absolute bottom-0 left-10 w-48 aspect-video object-cover z-10 rotate-[7deg] rounded-2xl border-4 border-white shadow-slight" />
+              <Image src={mmWebsite} alt="MineMass" className="absolute bottom-0 right-10 w-48 aspect-video object-cover rotate-[-7deg] rounded-2xl border-4 border-white -translate-y-10 shadow-slight" />
+            </div>
+            <h3 className="text-5xl text-fancy font-bold tracking-subtitle pr-1 mt-4">Branding</h3>
+          </div>
+        </div>
+      </section>
+
+      
+
+    </main>
   );
 }

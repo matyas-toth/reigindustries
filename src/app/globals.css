@@ -14,13 +14,61 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: rgb(241, 245, 249);
+    --foreground: rgb(7, 7, 17);
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-manrope), Arial, Helvetica, sans-serif;
+}
+
+.text-fancy {
+  background-image: radial-gradient(98.0344% 98.0344% at 1.35135% 3.04878%, rgb(49, 46, 129) 0%, rgb(0, 0, 0) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.animate-x-slider {
+  animation: x-slider 30s linear infinite;
+}
+
+@keyframes x-slider {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-100%)) }
+}
+
+.text-gray {
+  color: #6b7280;
+}
+
+.tracking-hero {
+  letter-spacing: -0.04em;
+}
+
+.tracking-subtitle {
+  letter-spacing: -0.06em;
+}
+
+.tracking-text {
+  letter-spacing: -0.02em;
+}
+
+.tracking-pill {
+  letter-spacing: -0.03em;
+}
+
+.font-manrope {
+  font-family: var(--font-manrope);
+}
+
+.shadow-slight {
+  box-shadow: rgba(79, 70, 229, 0.16) 0px 4px 12px 0px;
+}
+.shadow-slighter {
+  box-shadow: 0 4px 4px #00000005;
 }
