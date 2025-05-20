@@ -32,7 +32,19 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.text-fancy-2 {
+  background: radial-gradient(circle at left top, rgb(49, 46, 129) 0px, rgb(2, 6, 23) 100%) text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+.text-fancy-3 {
+  background: radial-gradient(circle at top left, #312e81 0, #020617 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .animate-x-slider {
   animation: x-slider 30s linear infinite;
 }
