@@ -92,8 +92,35 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="mt-28 flex flex-col justify-center items-center gap-10 font-bold text-[56px] tracking-subtitle w-5xl text-center [line-height:60px]">
+        <h2 className="text-fancy mb-5 pr-1 pb-2">Akiknek Már Segítettünk</h2>
+        <div className="flex flex-col justify-between items-center gap-10 w-full">
+          <div className="relative group overflow-hidden w-full gap-4 h-96 p-8 bg-white rounded-[42px] shadow-slighter flex flex-row justify-between items-start">
+            <div className="h-full w-1/2 bg-red-500 rounded-[24px]"></div>
+            <div>
+              <h3 className="text-[32px] font-bold tracking-subtitle text-fancy text-left z-10">Anyádnak</h3>
+              <p className="font-semibold text-gray text-[16px] tracking-text [line-height:1.4em] text-left z-10">A design-jaink nem csak jól néznek ki, de 200%-al több látogatót konvertálnak.</p>
+            </div>
+          </div>
+          <div className="relative group overflow-hidden w-full gap-4 h-96 p-8 bg-white rounded-[42px] shadow-slighter flex flex-row justify-between items-start">
+          <div>
+              <h3 className="text-[32px] font-bold tracking-subtitle text-fancy text-right z-10 pr-1">Forgalomnövelés</h3>
+              <p className="font-semibold text-gray text-[16px] tracking-text [line-height:1.4em] text-right z-10">A design-jaink nem csak jól néznek ki, de 200%-al több látogatót konvertálnak.</p>
+            </div>
+            <div className="h-full w-1/2 bg-red-500 rounded-[24px]"></div>
+            
+          </div>
+          <div className="relative group overflow-hidden w-full gap-4 h-96 p-8 bg-white rounded-[42px] shadow-slighter flex flex-row justify-between items-start">
+            <div className="h-full w-1/2 bg-red-500 rounded-[24px]"></div>
+            <div>
+              <h3 className="text-[32px] font-bold tracking-subtitle text-fancy text-left z-10">Anyádnak</h3>
+              <p className="font-semibold text-gray text-[16px] tracking-text [line-height:1.4em] text-left z-10">A design-jaink nem csak jól néznek ki, de 200%-al több látogatót konvertálnak.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      
+
 
     </main>
   );
