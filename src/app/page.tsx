@@ -21,7 +21,7 @@ import macosHand from "@/../public/macos_hand.webp";
 import discordCircle from "@/../public/app_icons/discord_circle.webp";
 import telegramCircle from "@/../public/app_icons/telegram_circle.webp";
 import whatsappCircle from "@/../public/app_icons/whatsapp_circle.webp";
-import { Check } from "lucide-react";
+import { Check, ChevronDown } from "lucide-react";
 import FullWidthCTAButton from "@/components/full-width-cta-button";
 
 export default function Home() {
@@ -224,23 +224,152 @@ export default function Home() {
               <FullWidthCTAButton />
             </div>
           </div>
-          <div className="relative w-96 h-96 px-8 py-5 bg-white rounded-[42px] shadow-slighter flex flex-col justify-start items-start">
+          <div className="relative w-96 h-auto px-8 py-5 bg-white rounded-[42px] shadow-slighter flex flex-col justify-start items-start">
             <div className="absolute -bottom-40 left-0 w-full h-full">
 
             </div>
             <h3 className="text-[32px] font-semibold z-10 tracking-subtitle text-fancy-2 text-left">Multipage</h3>
             <h2 className="text-[70px] font-bold tracking-subtitle text-fancy-2 text-left">78.000+ HUF</h2>
+            <div className="flex flex-col justify-start items-start text-gray text-sm mt-8 gap-2 w-full">
+              <div className="flex flex-row justify-start items-center gap-2">
+                <div className="select-none w-fit relative bg-gradient-to-b from-[#6366f1] to-[#3730a3] rounded-[47.86px] px-[3px] pt-[3px] pb-[3px]  shadow-slight group transition-all duration-300">
+                  <div className="[background:radial-gradient(35%_63%_at_50%_50%,rgb(99,102,241)_0%,rgb(67,56,202)_100%)] rounded-[54.69px] tracking-text text-[18px] font-semibold text-white px-[4px] py-[4px] transition-all duration-300">
+                    <Check strokeWidth={3} size={12}></Check>
+                  </div>
+                </div>
+                <p className="text-gray font-semibold text-lg -tracking-[0.04em] -translate-y-[1px]">3 Design Koncepció</p>
+              </div>
+              <div className="flex flex-row justify-start items-center gap-2">
+                <div className="select-none w-fit relative bg-gradient-to-b from-[#6366f1] to-[#3730a3] rounded-[47.86px] px-[3px] pt-[3px] pb-[3px]  shadow-slight group transition-all duration-300">
+                  <div className="[background:radial-gradient(35%_63%_at_50%_50%,rgb(99,102,241)_0%,rgb(67,56,202)_100%)] rounded-[54.69px] tracking-text text-[18px] font-semibold text-white px-[4px] py-[4px] transition-all duration-300">
+                    <Check strokeWidth={3} size={12}></Check>
+                  </div>
+                </div>
+                <p className="text-gray font-semibold text-lg -tracking-[0.04em] -translate-y-[1px]">Copywriting</p>
+              </div>
+              <div className="flex flex-row justify-start items-center gap-2">
+                <div className="select-none w-fit relative bg-gradient-to-b from-[#6366f1] to-[#3730a3] rounded-[47.86px] px-[3px] pt-[3px] pb-[3px]  shadow-slight group transition-all duration-300">
+                  <div className="[background:radial-gradient(35%_63%_at_50%_50%,rgb(99,102,241)_0%,rgb(67,56,202)_100%)] rounded-[54.69px] tracking-text text-[18px] font-semibold text-white px-[4px] py-[4px] transition-all duration-300">
+                    <Check strokeWidth={3} size={12}></Check>
+                  </div>
+                </div>
+                <p className="text-gray font-semibold text-lg -tracking-[0.04em] -translate-y-[1px]">1 Főoldal</p>
+              </div>
+              <div className="flex flex-row justify-start items-center gap-2">
+                <div className="select-none w-fit relative bg-gradient-to-b from-[#6366f1] to-[#3730a3] rounded-[47.86px] px-[3px] pt-[3px] pb-[3px]  shadow-slight group transition-all duration-300">
+                  <div className="[background:radial-gradient(35%_63%_at_50%_50%,rgb(99,102,241)_0%,rgb(67,56,202)_100%)] rounded-[54.69px] tracking-text text-[18px] font-semibold text-white px-[4px] py-[4px] transition-all duration-300">
+                    <Check strokeWidth={3} size={12}></Check>
+                  </div>
+                </div>
+                <p className="text-gray font-semibold text-lg -tracking-[0.04em] -translate-y-[1px]">Konvertálásra Optimalizált</p>
+              </div>
+              <div className="flex flex-row justify-start items-center gap-2">
+                <div className="select-none w-fit relative bg-gradient-to-b from-[#6366f1] to-[#3730a3] rounded-[47.86px] px-[3px] pt-[3px] pb-[3px]  shadow-slight group transition-all duration-300">
+                  <div className="[background:radial-gradient(35%_63%_at_50%_50%,rgb(99,102,241)_0%,rgb(67,56,202)_100%)] rounded-[54.69px] tracking-text text-[18px] font-semibold text-white px-[4px] py-[4px] transition-all duration-300">
+                    <Check strokeWidth={3} size={12}></Check>
+                  </div>
+                </div>
+                <p className="text-gray font-semibold text-lg -tracking-[0.04em] -translate-y-[1px]">15 Napos Határidő</p>
+              </div>
+              <div className="flex flex-row justify-start items-center gap-2">
+                <div className="select-none w-fit relative bg-gradient-to-b from-[#6366f1] to-[#3730a3] rounded-[47.86px] px-[3px] pt-[3px] pb-[3px]  shadow-slight group transition-all duration-300">
+                  <div className="[background:radial-gradient(35%_63%_at_50%_50%,rgb(99,102,241)_0%,rgb(67,56,202)_100%)] rounded-[54.69px] tracking-text text-[18px] font-semibold text-white px-[4px] py-[4px] transition-all duration-300">
+                    <Check strokeWidth={3} size={12}></Check>
+                  </div>
+                </div>
+                <p className="text-gray font-semibold text-lg -tracking-[0.04em] -translate-y-[1px]">Egyszerű Animációk</p>
+              </div>
+              <div className="flex flex-row justify-start items-center gap-2 mb-4">
+                <div className="select-none w-fit relative bg-gradient-to-b from-[#6366f1] to-[#3730a3] rounded-[47.86px] px-[3px] pt-[3px] pb-[3px]  shadow-slight group transition-all duration-300">
+                  <div className="[background:radial-gradient(35%_63%_at_50%_50%,rgb(99,102,241)_0%,rgb(67,56,202)_100%)] rounded-[54.69px] tracking-text text-[18px] font-semibold text-white px-[4px] py-[4px] transition-all duration-300">
+                    <Check strokeWidth={3} size={12}></Check>
+                  </div>
+                </div>
+                <p className="text-gray font-semibold text-lg -tracking-[0.04em] -translate-y-[1px]">NextJS Forráskód</p>
+              </div>
+              <FullWidthCTAButton />
+            </div>
           </div>
-          <div className="relative w-96 h-96 px-8 py-5 bg-white rounded-[42px] shadow-slighter flex flex-col justify-start items-start">
+          <div className="relative w-96 h-auto px-8 py-5 bg-white rounded-[42px] shadow-slighter flex flex-col justify-start items-start">
             <div className="absolute -bottom-40 left-0 w-full h-full">
 
             </div>
             <h3 className="text-[32px] font-semibold z-10 tracking-subtitle text-fancy-2 text-left">Logo Design</h3>
             <h2 className="text-[70px] font-bold tracking-subtitle text-fancy-2 text-left">33.000 HUF</h2>
+            <div className="flex flex-col justify-start items-start text-gray text-sm mt-8 gap-2 w-full">
+              <div className="flex flex-row justify-start items-center gap-2">
+                <div className="select-none w-fit relative bg-gradient-to-b from-[#6366f1] to-[#3730a3] rounded-[47.86px] px-[3px] pt-[3px] pb-[3px]  shadow-slight group transition-all duration-300">
+                  <div className="[background:radial-gradient(35%_63%_at_50%_50%,rgb(99,102,241)_0%,rgb(67,56,202)_100%)] rounded-[54.69px] tracking-text text-[18px] font-semibold text-white px-[4px] py-[4px] transition-all duration-300">
+                    <Check strokeWidth={3} size={12}></Check>
+                  </div>
+                </div>
+                <p className="text-gray font-semibold text-lg -tracking-[0.04em] -translate-y-[1px]">3 Design Koncepció</p>
+              </div>
+              <div className="flex flex-row justify-start items-center gap-2">
+                <div className="select-none w-fit relative bg-gradient-to-b from-[#6366f1] to-[#3730a3] rounded-[47.86px] px-[3px] pt-[3px] pb-[3px]  shadow-slight group transition-all duration-300">
+                  <div className="[background:radial-gradient(35%_63%_at_50%_50%,rgb(99,102,241)_0%,rgb(67,56,202)_100%)] rounded-[54.69px] tracking-text text-[18px] font-semibold text-white px-[4px] py-[4px] transition-all duration-300">
+                    <Check strokeWidth={3} size={12}></Check>
+                  </div>
+                </div>
+                <p className="text-gray font-semibold text-lg -tracking-[0.04em] -translate-y-[1px]">Copywriting</p>
+              </div>
+              <div className="flex flex-row justify-start items-center gap-2">
+                <div className="select-none w-fit relative bg-gradient-to-b from-[#6366f1] to-[#3730a3] rounded-[47.86px] px-[3px] pt-[3px] pb-[3px]  shadow-slight group transition-all duration-300">
+                  <div className="[background:radial-gradient(35%_63%_at_50%_50%,rgb(99,102,241)_0%,rgb(67,56,202)_100%)] rounded-[54.69px] tracking-text text-[18px] font-semibold text-white px-[4px] py-[4px] transition-all duration-300">
+                    <Check strokeWidth={3} size={12}></Check>
+                  </div>
+                </div>
+                <p className="text-gray font-semibold text-lg -tracking-[0.04em] -translate-y-[1px]">1 Főoldal</p>
+              </div>
+              <div className="flex flex-row justify-start items-center gap-2">
+                <div className="select-none w-fit relative bg-gradient-to-b from-[#6366f1] to-[#3730a3] rounded-[47.86px] px-[3px] pt-[3px] pb-[3px]  shadow-slight group transition-all duration-300">
+                  <div className="[background:radial-gradient(35%_63%_at_50%_50%,rgb(99,102,241)_0%,rgb(67,56,202)_100%)] rounded-[54.69px] tracking-text text-[18px] font-semibold text-white px-[4px] py-[4px] transition-all duration-300">
+                    <Check strokeWidth={3} size={12}></Check>
+                  </div>
+                </div>
+                <p className="text-gray font-semibold text-lg -tracking-[0.04em] -translate-y-[1px]">Konvertálásra Optimalizált</p>
+              </div>
+              <div className="flex flex-row justify-start items-center gap-2">
+                <div className="select-none w-fit relative bg-gradient-to-b from-[#6366f1] to-[#3730a3] rounded-[47.86px] px-[3px] pt-[3px] pb-[3px]  shadow-slight group transition-all duration-300">
+                  <div className="[background:radial-gradient(35%_63%_at_50%_50%,rgb(99,102,241)_0%,rgb(67,56,202)_100%)] rounded-[54.69px] tracking-text text-[18px] font-semibold text-white px-[4px] py-[4px] transition-all duration-300">
+                    <Check strokeWidth={3} size={12}></Check>
+                  </div>
+                </div>
+                <p className="text-gray font-semibold text-lg -tracking-[0.04em] -translate-y-[1px]">15 Napos Határidő</p>
+              </div>
+              <div className="flex flex-row justify-start items-center gap-2">
+                <div className="select-none w-fit relative bg-gradient-to-b from-[#6366f1] to-[#3730a3] rounded-[47.86px] px-[3px] pt-[3px] pb-[3px]  shadow-slight group transition-all duration-300">
+                  <div className="[background:radial-gradient(35%_63%_at_50%_50%,rgb(99,102,241)_0%,rgb(67,56,202)_100%)] rounded-[54.69px] tracking-text text-[18px] font-semibold text-white px-[4px] py-[4px] transition-all duration-300">
+                    <Check strokeWidth={3} size={12}></Check>
+                  </div>
+                </div>
+                <p className="text-gray font-semibold text-lg -tracking-[0.04em] -translate-y-[1px]">Egyszerű Animációk</p>
+              </div>
+              <div className="flex flex-row justify-start items-center gap-2 mb-4">
+                <div className="select-none w-fit relative bg-gradient-to-b from-[#6366f1] to-[#3730a3] rounded-[47.86px] px-[3px] pt-[3px] pb-[3px]  shadow-slight group transition-all duration-300">
+                  <div className="[background:radial-gradient(35%_63%_at_50%_50%,rgb(99,102,241)_0%,rgb(67,56,202)_100%)] rounded-[54.69px] tracking-text text-[18px] font-semibold text-white px-[4px] py-[4px] transition-all duration-300">
+                    <Check strokeWidth={3} size={12}></Check>
+                  </div>
+                </div>
+                <p className="text-gray font-semibold text-lg -tracking-[0.04em] -translate-y-[1px]">NextJS Forráskód</p>
+              </div>
+              <FullWidthCTAButton />
+            </div>
           </div>
         </div>
       </section>
-
+      <section className="mt-28 flex flex-row justify-between items-start gap-10 font-bold text-[56px] tracking-subtitle w-6xl text-center [line-height:60px]">
+        <div className="flex flex-col justify-start items-start">
+          <h2 className="font-semibold text-[85px] text-fancy-3 [line-height:85px]">Kérdések?</h2>
+          <h2 className="font-semibold text-[85px] text-fancy-3 [line-height:85px]">Válaszolunk.</h2>
+        </div>
+        <div className="flex flex-col justify-start items-center text-2xl font-medium  tracking-pill w-[50%] text-left">
+          <div className="bg-white shadow-slighter rounded-full px-8 py-6 w-full flex flex-row justify-between items-center">
+            <span>Kikkel dolgoztok együtt?</span>
+            <ChevronDown size={30} />
+          </div>
+        </div>
+      </section>
 
 
     </main>
