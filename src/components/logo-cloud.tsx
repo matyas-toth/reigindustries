@@ -41,8 +41,8 @@ const logos = [
 
 export default function AnimatedLogoCloud() {
     return (
-      <div className="w-full py-4">
-        <div className="mx-auto w-full px-4 md:px-8">
+      <div className="w-sm md:w-full py-4 overflow-hidden">
+        <div className="mx-auto w-full px-4 md:px-8 overflow-hidden">
           <div
             className="group relative mt-6 flex gap-6 overflow-hidden p-2"
             style={{

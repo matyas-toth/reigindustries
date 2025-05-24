@@ -45,6 +45,14 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.text-fancy-4 {
+  background: radial-gradient(circle at left top, rgb(199, 210, 254) 0px, rgb(255, 255, 255) 100%) text !important;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .animate-x-slider {
   animation: x-slider 30s linear infinite;
 }
@@ -83,4 +91,45 @@ body {
 }
 .shadow-slighter {
   box-shadow: 0 4px 4px #00000005;
+}
+
+.bg-fancy {
+  background: radial-gradient(circle at 50% -90%, rgb(199, 210, 254) 0px, rgba(165, 180, 252, 0) 60%) no-repeat, linear-gradient(rgb(99, 102, 241), rgb(67, 56, 202));
+}
+
+.bg-fancy-2 {
+  background: radial-gradient(circle, rgb(99, 102, 241) 0px, rgb(79, 70, 229) 100%);
+}
+
+.bg-fancy-3 {
+  background: radial-gradient(circle at 50% -90%, rgb(255, 255, 255) 0px, rgba(165, 180, 252, 0) 60%) no-repeat, linear-gradient(rgb(224, 231, 255), rgb(165, 180, 252));
+}
+
+.bg-fancy-4 {
+  background: radial-gradient(rgb(255, 255, 255) 0px, rgb(199, 210, 254) 100%);
+}
+
+.text-dark {
+  color: rgb(2, 6, 23);
+}
+
+
+
+
+.animate-floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+.animate-floating-2 {
+  animation: floating 3s 0.5s ease-in-out infinite;
+}
+
+.animate-floating-3 {
+  animation: floating 3s 1s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
 }
